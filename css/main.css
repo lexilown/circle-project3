@@ -52,6 +52,57 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+  color: #8A9B9C;
+}
+
+h1 {
+  color: #295A60;
+}
+
+h2 {
+  color: #295A60;
+}
+
+/* nav */
+h3 {
+  color: #295A60;
+  text-transform: uppercase;
+}
+
+/* retailers */
+h4 {
+  color: #295A60;
+  text-transform: uppercase;
+}
+
+/* oz bottle */
+h5 {
+  color: #8A9B9C;
+}
+
+/* nav */
+h6 {
+  color: #295A60;
+}
+
+/* scents */
+h7 {
+  color: #C5C6C4;
+}
+
+/* explore */
+h8 {
+  color: #C5C6C4;
+  text-transform: uppercase;
+}
+
+button {
+  text-transform: uppercase;
+}
+
+
+
 /* Responsive images base, put your images in a wrapper
 img {
     display: block;
