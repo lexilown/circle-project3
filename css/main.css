@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700|Source+Sans+Pro:200,300,400,400i,600,700,900|Source+Serif+Pro:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 /* There's where you would put your Google Fonts import */
 
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
@@ -54,54 +54,144 @@ textarea {
 
 body {
   color: #8A9B9C;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
 }
 
+li {
+  color: #8A9B9C;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+/* page title */
 h1 {
   color: #295A60;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 70px;
 }
 
+/* product title */
 h2 {
   color: #295A60;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 46px;
 }
 
-/* nav */
+/* nav band*/
 h3 {
   color: #295A60;
   text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 19px;
+  letter-spacing: 1px;
 }
 
 /* retailers */
 h4 {
   color: #295A60;
   text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
 }
 
 /* oz bottle */
 h5 {
   color: #8A9B9C;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 23px;
 }
 
-/* nav */
+/* nav drop*/
 h6 {
   color: #295A60;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 /* scents */
 h7 {
   color: #C5C6C4;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 /* explore */
 h8 {
   color: #C5C6C4;
   text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: .5px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
 }
 
 button {
   text-transform: uppercase;
+  background: none;
+  background-color: white;
+  box-shadow: none;
+  border: 1.9px solid #8A9B9C;
+  padding: 7px 15px;
+  font-size: 14px;
+  letter-spacing: .5px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+/*footer*/
+h9 {
+  color: #8A9B9C;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/*quantity*/
+h10 {
+  color: #C5C6C4;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 
+
+products-masthead {
+  background-image: url("../assets/background_products_desktop.jpg");
+  background-repeat: repeat;
+  background-position: center;
+  height: 405px;
+}
+
+products-content {
+  padding: 100px;
+}
+
+bodywash {
+  margin: 100px;
+}
+
+spray {
+  margin: 100px;
+}
+
+lotion {
+  margin: 100px;
+}
+
+home-content {
+  padding-left: 100px;
+  padding-right: 100px:
+}
 
 /* Responsive images base, put your images in a wrapper
 img {
@@ -121,18 +211,18 @@ html {
 }
 /* END BOX MODEL SETTINGS */
 
-body {
+/*body {
   font-size: 16px; /* Base Size */
-  /*Setting the base font family*/
-  font-family: "Source Sans Pro", Verdana, sans-serif;
+  /*font-family: "Source Sans Pro", Verdana, sans-serif;
   margin: 0;
   padding: 0;
-}
+}*/*/
 
 /*Here's a sample media query for you. This one is for desktop styles.*/
 /*@media only screen and (min-width: 960px) {
 
 }
+
 
 /* ==========================================================================
    Helper classes
