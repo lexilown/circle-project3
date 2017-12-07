@@ -165,35 +165,34 @@ h10 {
 
 
 
-products-masthead {
+.products-masthead {
   background-image: url("../assets/background_products_desktop.jpg");
   background-repeat: repeat;
   background-position: center;
   height: 405px;
 }
 
-products-content {
-  padding: 100px;
+.products-content {
+  padding: 20px 100px;
 }
 
-bodywash {
-  margin: 100px;
+.home-masthead {
+  background-image: url("../assets/background_home_desktop.jpg");
+  background-repeat: repeat;
+  background-position: center;
+  height: 405px;
 }
 
-spray {
-  margin: 100px;
+.home-content {
+  padding: 20px 100px;
 }
 
-lotion {
-  margin: 100px;
+.footer {
+  width: 100%;
+  border-top: 1px solid gray;
 }
 
-home-content {
-  padding-left: 100px;
-  padding-right: 100px:
-}
-
-/* Responsive images base, put your images in a wrapper
+/* Responsive images base, put your images in a wrapper*/
 img {
     display: block;
     width: 100%;
