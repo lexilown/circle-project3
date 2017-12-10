@@ -163,7 +163,46 @@ h10 {
   font-size: 14px;
 }
 
+a {
+  text-decoration: none;
+}
 
+.products-scents a {
+  padding-right: 25px;
+}
+
+.nav-top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+  width: 100%;
+  border-bottom: 1px solid #C5C6C4;
+}
+
+.products-scents {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav-second {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px 30px;
+  background-color: yellow;
+}
+
+.nav-second h6 {
+  padding-left: 30px;
+}
 
 .products-masthead {
   background-image: url("../assets/background_products_desktop.jpg");
@@ -188,13 +227,17 @@ h10 {
 }
 
 .footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  border-top: 1px solid gray;
+  border-top: 1px solid #C5C6C4;
+  padding: 18px 30px;
 }
 
-.nav-top {
-  
-}
+
 
 /* Responsive images base, put your images in a wrapper*/
 img {
