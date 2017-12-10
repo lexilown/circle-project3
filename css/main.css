@@ -80,6 +80,8 @@ h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 200;
   font-size: 46px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 /* nav band*/
@@ -106,6 +108,7 @@ h5 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 23px;
+  margin-top: 0px:
 }
 
 /* nav drop*/
@@ -132,6 +135,8 @@ h8 {
   letter-spacing: .5px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
+  text-decoration: underline;
+  padding-bottom: 15px;
 }
 
 button {
@@ -197,7 +202,8 @@ a {
   justify-content: flex-end;
   align-items: center;
   padding: 0px 30px;
-  background-color: yellow;
+  background-color: white;
+  height: 50px;
 }
 
 .nav-second h6 {
@@ -206,24 +212,79 @@ a {
 
 .products-masthead {
   background-image: url("../assets/background_products_desktop.jpg");
-  background-repeat: repeat;
+  background-repeat: repeat-x;
   background-position: center;
   height: 405px;
 }
 
-.products-content {
-  padding: 20px 100px;
-}
-
 .home-masthead {
   background-image: url("../assets/background_home_desktop.jpg");
-  background-repeat: repeat;
+  background-repeat: repeat-x;
   background-position: center;
   height: 405px;
 }
 
 .home-content {
   padding: 20px 100px;
+}
+
+.products-content {
+  padding: 20px 100px;
+}
+
+.bodywash, .spray, .lotion {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.bodywash-image, .spray-image, .lotion-image {
+  max-height: 524px;
+  max-width: 405px;
+  min-height: 250px;
+  min-width: 250px;
+  margin-right: 40px;
+}
+
+.lotion-text {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: flex-start;
+}
+
+.scents img {
+  height: 18px;
+  width: 18px;
+  margin: 3px;
+}
+@media only screen and (max-width: 360px) {
+  .scent img {
+    height: 25px;
+    width: 25px;
+  }
+}
+
+.scents {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: flex-start;
+  padding-top: 15px;
+  padding-bottom: 35px;
+}
+
+.riley {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+}
+
+.scents h10 {
+  padding-left: 10px;
+  padding-right: 2px;
 }
 
 .footer {

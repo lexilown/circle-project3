@@ -42,16 +42,12 @@
       </div>
 
 
-
-      <div class="nav-second">
-        <h6>login</h6>
-        <h6>cart</h6>
-        <h6>support</h6>
-      </div>
-
-
-
       <div class="products-masthead">
+        <div class="nav-second">
+          <h6>login</h6>
+          <h6>cart</h6>
+          <h6>support</h6>
+        </div>
       </div>
 
 
@@ -105,12 +101,28 @@
               <h2>Lotion</h2>
               <h5>20 oz. bottle | $4.79</h5>
               <h7>Scents</h7>
-              <ul>
-                <li>Casey</li>
-                <li>Riley</li><h10>Quantity 1</h10>
+
+              <div class="scents">
+                <div class="casey">
+                    <input type="radio" id="contactChoice1"
+                    name="contact" value="email">
+                    <label for="contactChoice1">Casey</label>
+                </div>
+
+                <div class="riley">
+                    <input type="radio" id="contactChoice2"
+                    name="contact" value="phone">
+                    <label for="contactChoice2">Riley</label><h10>Quantity 1</h10>
                     <img src="assets/plus_desktop.png"/><img src="assets/minus_desktop.png"/>
-                <li>Taylor</li>
-              </ul>
+                </div>
+
+                <div class="taylor">
+                    <input type="radio" id="contactChoice3"
+                    name="contact" value="mail">
+                    <label for="contactChoice3">Taylor</label>
+                </div>
+              </div>
+
               <h8>explore all products</h8>
               <button>add to cart</button>
           </div>
