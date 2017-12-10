@@ -72,6 +72,7 @@ h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   font-size: 70px;
+  margin-top: 100px;
 }
 
 /* product title */
@@ -80,8 +81,8 @@ h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 200;
   font-size: 46px;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 /* nav band*/
@@ -100,6 +101,8 @@ h4 {
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
+  margin-top: 70px;
+  margin-bottom: 0;
 }
 
 /* oz bottle */
@@ -108,7 +111,7 @@ h5 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 23px;
-  margin-top: 0px:
+  margin: 0;
 }
 
 /* nav drop*/
@@ -125,6 +128,7 @@ h7 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 18px;
+  padding-top: 40px;
 }
 
 /* explore */
@@ -221,6 +225,16 @@ a {
   position: relative;
 }
 
+@media only screen and (max-width: 340px) {
+  .products-masthead {
+    background-image: url("../assets/background_products_mobile.jpg");
+    background-repeat: repeat-x;
+    background-position: center;
+    height: 270px;
+    position: relative;
+  }
+}
+
 .home-masthead {
   background-image: url("../assets/background_home_desktop.jpg");
   background-repeat: repeat-x;
@@ -229,8 +243,27 @@ a {
   position: relative;
 }
 
+@media only screen and (max-width: 340px) {
+  .home-masthead {
+    background-image: url("../assets/background_home_mobile.jpg");
+    background-repeat: repeat-x;
+    background-position: center;
+    height: 270px;
+    position: relative;
+  }
+}
+
 .home-content {
-  padding: 20px 20vw;
+  /*padding: 20px 20vw;*/
+  max-width: 900px;
+  min-width: 240px;
+  padding: 20px 100px;
+}
+/*change vw for mobile*/
+
+.home-content h2 {
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 
 .products-content {
@@ -241,8 +274,14 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: none;
-  justify-content: space-evenly;
   align-items: center;
+}
+
+@media only screen and (max-width: 700px) {
+  .bodywash, .spray, .lotion {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .bodywash-image, .spray-image, .lotion-image {
@@ -250,10 +289,19 @@ a {
   max-width: 405px;
   min-height: 250px;
   min-width: 250px;
-  margin-right: 40px;
+  margin-right: 130px;
+  margin-bottom: 70px;
+  margin-top: 70px;
 }
 
-.lotion-text {
+@media only screen and (max-width: 900px) {
+  .bodywash-image, .spray-image, .lotion-image {
+    margin-right: 80px;
+  }
+}
+
+
+.bodywash-text, .spray-text, .lotion-text {
   display: flex;
   flex-direction: column;
   flex-wrap: none;
@@ -265,6 +313,7 @@ a {
   width: 18px;
   margin: 3px;
 }
+
 @media only screen and (max-width: 360px) {
   .scent img {
     height: 25px;
@@ -277,8 +326,8 @@ a {
   flex-direction: column;
   flex-wrap: none;
   justify-content: flex-start;
-  padding-top: 15px;
-  padding-bottom: 35px;
+  padding-top: 10px;
+  padding-bottom: 40px;
 }
 
 .scents > div {
@@ -286,11 +335,41 @@ a {
   flex-direction: row;
   flex-wrap: none;
   align-items: center;
+  padding: 1px;
+}
+
+.radio {
+  padding: 20px;
 }
 
 .scents h10 {
-  padding-left: 10px;
-  padding-right: 2px;
+  padding-left: 15px;
+  padding-right: 4px;
+}
+
+.stores {
+  display: flex;
+  flex-direction: row;
+}
+
+.retail {
+  padding: 0;
+  margin: 0;
+}
+
+@media only screen and (max-width: 580px) {
+  .stores {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding: 5px;
 }
 
 .footer {
@@ -302,6 +381,7 @@ a {
   width: 100%;
   border-top: 1px solid #C5C6C4;
   padding: 18px 30px;
+  margin-top: 100px;
 }
 
 
