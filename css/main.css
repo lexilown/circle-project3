@@ -55,7 +55,7 @@ textarea {
 body {
   color: #8A9B9C;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 18px;
 }
 @media only screen and (max-width: 900px) {
@@ -67,7 +67,7 @@ body {
 li {
   color: #8A9B9C;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 18px;
 }
 @media only screen and (max-width: 900px) {
@@ -128,12 +128,12 @@ h4 {
   font-weight: 400;
   margin-top: 70px;
   margin-bottom: 0;
-  font-size: 21px;
+  font-size: 20px;
   letter-spacing: 1px;
 }
 @media only screen and (max-width: 900px) {
   h4 {
-    font-size: 19px;
+    font-size: 18px;
   }
 }
 
@@ -141,7 +141,7 @@ h4 {
 h5 {
   color: #8A9B9C;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 23px;
   margin: 0;
 }
@@ -189,6 +189,11 @@ h8 {
   text-decoration: underline;
   padding-bottom: 15px;
 }
+@media only screen and (max-width: 900px) {
+  h8 {
+    font-size: 13px;
+  }
+}
 
 button {
   text-transform: uppercase;
@@ -202,6 +207,11 @@ button {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   border-radius: 0px;
+}
+@media only screen and (max-width: 900px) {
+  button {
+    font-size: 13px;
+  }
 }
 
 /*footer*/
@@ -315,7 +325,8 @@ a {
     background-image: url("../assets/background_products_mobile.jpg");
     background-repeat: repeat-x;
     background-position: center;
-    height: 270px;
+    max-height: 270px;
+    min-height: 200px;
     position: relative;
   }
 }
@@ -333,7 +344,8 @@ a {
     background-image: url("../assets/background_home_mobile.jpg");
     background-repeat: repeat-x;
     background-position: center;
-    height: 270px;
+    max-height: 270px;
+    min-height: 200px;
     position: relative;
   }
 }
@@ -363,9 +375,9 @@ a {
 .products-content {
   padding: 20px 100px;
 }
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 450px) {
   .products-content {
-    padding: 20px 25px;
+    padding: 20px 20px;
   }
 }
 
@@ -411,13 +423,6 @@ a {
   height: 18px;
   width: 18px;
   margin: 3px;
-}
-
-@media only screen and (max-width: 360px) {
-  .scent img {
-    height: 25px;
-    width: 25px;
-  }
 }
 
 .scents {
@@ -488,7 +493,7 @@ li {
     flex-direction: column;
   }
   .footer img {
-    padding-top: 10px;
+    padding-top: 15px;
   }
 }
 
