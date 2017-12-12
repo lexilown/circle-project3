@@ -58,12 +58,22 @@ body {
   font-weight: 400;
   font-size: 18px;
 }
+@media only screen and (max-width: 900px) {
+  body {
+    font-size: 15px;
+  }
+}
 
 li {
   color: #8A9B9C;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 18px;
+}
+@media only screen and (max-width: 900px) {
+  li {
+    font-size: 16px;
+  }
 }
 
 /* page title */
@@ -73,6 +83,11 @@ h1 {
   font-weight: 300;
   font-size: 70px;
   margin-top: 100px;
+}
+@media only screen and (max-width: 900px) {
+  h1 {
+    font-size: 48px;
+  }
 }
 
 /* product title */
@@ -84,6 +99,11 @@ h2 {
   margin: 0;
   padding: 0;
 }
+@media only screen and (max-width: 900px) {
+  h2 {
+    font-size: 36px;
+  }
+}
 
 /* nav band*/
 h3 {
@@ -94,6 +114,11 @@ h3 {
   font-size: 19px;
   letter-spacing: 1px;
 }
+@media only screen and (max-width: 900px) {
+  h3 {
+    font-size: 17px;
+  }
+}
 
 /* retailers */
 h4 {
@@ -103,6 +128,13 @@ h4 {
   font-weight: 400;
   margin-top: 70px;
   margin-bottom: 0;
+  font-size: 21px;
+  letter-spacing: 1px;
+}
+@media only screen and (max-width: 900px) {
+  h4 {
+    font-size: 19px;
+  }
 }
 
 /* oz bottle */
@@ -113,6 +145,11 @@ h5 {
   font-size: 23px;
   margin: 0;
 }
+@media only screen and (max-width: 900px) {
+  h5 {
+    font-size: 21px;
+  }
+}
 
 /* nav drop*/
 h6 {
@@ -120,6 +157,11 @@ h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 14px;
+}
+@media only screen and (max-width: 900px) {
+  h6 {
+    font-size: 12px;
+  }
 }
 
 /* scents */
@@ -129,6 +171,11 @@ h7 {
   font-weight: 400;
   font-size: 18px;
   padding-top: 40px;
+}
+@media only screen and (max-width: 900px) {
+  h7 {
+    font-size: 16px;
+  }
 }
 
 /* explore */
@@ -148,12 +195,13 @@ button {
   background: none;
   background-color: white;
   box-shadow: none;
-  border: 1.9px solid #8A9B9C;
-  padding: 7px 15px;
+  border: 1px solid #8A9B9C;
+  padding: 7px 10px;
   font-size: 14px;
   letter-spacing: .5px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
+  border-radius: 0px;
 }
 
 /*footer*/
@@ -163,6 +211,11 @@ h9 {
   font-weight: 400;
   font-size: 14px;
 }
+@media only screen and (max-width: 900px) {
+  h9 {
+    font-size: 12px;
+  }
+}
 
 /*quantity*/
 h10 {
@@ -170,6 +223,11 @@ h10 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 14px;
+}
+@media only screen and (max-width: 900px) {
+  h10 {
+    font-size: 12px;
+  }
 }
 
 a {
@@ -189,6 +247,11 @@ a {
   padding: 0px 30px;
   width: 100%;
   border-bottom: 1px solid #C5C6C4;
+}
+@media only screen and (max-width: 500px) {
+  .nav-top {
+    display: none;
+  }
 }
 
 .products-scents {
@@ -212,9 +275,31 @@ a {
   top: 0;
   right: 0;
 }
+@media only screen and (max-width: 500px) {
+  .nav-second {
+    display: none;
+  }
+}
 
 .nav-second h6 {
   padding-left: 30px;
+}
+
+.nav-mobile {
+  display: none;
+}
+@media only screen and (max-width: 500px) {
+  .nav-mobile {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: none;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 30px;
+      width: 100%;
+      border-bottom: 1px solid #C5C6C4;
+      height: 60px;
+    }
 }
 
 .products-masthead {
@@ -255,19 +340,33 @@ a {
 
 .home-content {
   /*padding: 20px 20vw;*/
-  max-width: 900px;
+  max-width: 920px;
   min-width: 240px;
   padding: 20px 100px;
+  line-height: 2em;
 }
 /*change vw for mobile*/
+
+.home-content h1 {
+  padding-bottom: 5px;
+  line-height: 1.5em;
+
+}
 
 .home-content h2 {
   padding-top: 50px;
   padding-bottom: 20px;
+  line-height: 1.5em;
+
 }
 
 .products-content {
   padding: 20px 100px;
+}
+@media only screen and (max-width: 360px) {
+  .products-content {
+    padding: 20px 25px;
+  }
 }
 
 .bodywash, .spray, .lotion {
@@ -277,7 +376,7 @@ a {
   align-items: center;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) {
   .bodywash, .spray, .lotion {
     flex-direction: column;
     align-items: flex-start;
@@ -294,7 +393,7 @@ a {
   margin-top: 70px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
   .bodywash-image, .spray-image, .lotion-image {
     margin-right: 80px;
   }
@@ -338,8 +437,8 @@ a {
   padding: 1px;
 }
 
-.radio {
-  padding: 20px;
+.scents > div > label {
+  padding-left: 10px;
 }
 
 .scents h10 {
@@ -383,7 +482,15 @@ li {
   padding: 18px 30px;
   margin-top: 100px;
 }
-
+@media only screen and (max-width: 580px) {
+  .footer {
+    font-size: 12px;
+    flex-direction: column;
+  }
+  .footer img {
+    padding-top: 10px;
+  }
+}
 
 
 /* Responsive images base, put your images in a wrapper*/
